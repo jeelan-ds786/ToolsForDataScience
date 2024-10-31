@@ -3,6 +3,71 @@
 ## Project Overview
 This project utilizes the GitHub API to gather and analyze data on Toronto-based GitHub users with over 100 followers. The analysis provides insights into popular languages, community engagement, and repository trends among Toronto's developers.
 
+## Diagram 1: Project Workflow
+
+                   +----------------+
+                   |  GitHub API    |
+                   +----------------+
+                            |
+                            v
+                  +--------------------+
+                  |   Data Collection  |
+                  | - User details     |
+                  | - Repository data  |
+                  +--------------------+
+                            |
+                            v
+                  +---------------------+
+                  |  Data Cleaning      |
+                  | - Format standard   |
+                  | - Case normalization|
+                  +---------------------+
+                            |
+                            v
+                  +---------------------+
+                  | Data Storage        |
+                  | - users.csv         |
+                  | - repositories.csv  |
+                  +---------------------+
+                            |
+                            v
+                  +---------------------+
+                  |  Data Analysis      |
+                  | - Language trends   |
+                  | - Engagement metrics|
+                  +---------------------+
+                            |
+                            v
+                  +---------------------+
+                  |  Key Insights       |
+                  | - Recommendations   |
+                  | - Community insights|
+                  +---------------------+
+
+## Diagram 2: Database Structure 
+
+
+        +-----------------------+
+        |       users.csv       |
+        +-----------------------+
+        | login                 |
+        | name                  |
+        | company               |
+        | bio                   |
+        | followers             |
+        +-----------------------+
+                  |
+                  v
+        +-----------------------+
+        |  repositories.csv     |
+        +-----------------------+
+        | repo_name             |
+        | creation_date         |
+        | language              |
+        | stars                 |
+        | watchers              |
+        | license               |
+        +-----------------------+
 ### Key Findings
 - **JavaScript Popularity**: An unexpectedly high number of repositories are JavaScript-focused, indicating a strong demand for front-end expertise in Toronto.
 - **Impact of Documentation**: Repositories with detailed READMEs receive notably higher engagement, emphasizing the importance of documentation for developers.
@@ -35,6 +100,8 @@ Data was gathered using the GitHub API with specific criteria:
 1. **Predominance of JavaScript**: Over 40% of repositories use JavaScript, highlighting its popularity among Toronto-based developers.
 2. **Documentation Boosts Engagement**: Repositories with thorough documentation and organized READMEs saw a significant increase in stars and watchers.
 3. **Active Community**: Toronto users with 100+ followers show a higher-than-average follower count, suggesting an engaged GitHub community.
+
+
 
 ## Recommendations
 
